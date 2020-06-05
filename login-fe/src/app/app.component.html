@@ -1,0 +1,10 @@
+<div class="toolbar">
+  <app-toolbar></app-toolbar>
+</div>
+<div *ngIf="!jwt" class="content" role="main">
+  <app-login-form (jwt)="updateJWT($event)"></app-login-form>
+</div>
+<div *ngIf="jwt" class="content" role="main">
+	<h3>Il tuo JWT &egrave;:</h3>
+  	<span class="jwt-txt">{{jwt}}</span>
+</div>

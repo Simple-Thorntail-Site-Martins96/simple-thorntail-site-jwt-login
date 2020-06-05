@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  margin: 5%;
+  padding: 0 16px;
+  flex-direction: column;
+}
+
+.jwt-txt {
+	width: 90%;
+	word-wrap: break-word;
+}

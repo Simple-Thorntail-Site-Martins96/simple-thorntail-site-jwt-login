@@ -1,0 +1,20 @@
+# A project defaults for use with MP-JWT auth-method that include additional role mapping
+thorntail:
+  logging:
+    pattern-formatters:
+      LOG_FORMATTER:
+        pattern: "%p [%c] %s%e%n"
+    root-logger:
+      handlers:
+      - CONSOLE
+      - FILE
+    periodic-rotating-file-handlers:
+      FILE:
+        file:
+          path: log/MY_APP_NAME.log
+        suffix: .yyyy-MM-dd
+        named-formatter: LOG_FORMATTER
+        level: WARN
+    console-handlers:
+      CONSOLE:
+        level: FINE

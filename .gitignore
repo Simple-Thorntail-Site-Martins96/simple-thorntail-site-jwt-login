@@ -1,0 +1,15 @@
+.project
+.classpath
+.metainfo
+.settings
+
+bin/
+build/
+target/
+log/
+
+*.class
+*.bin
+*.jar
+*.war
+*.eair
