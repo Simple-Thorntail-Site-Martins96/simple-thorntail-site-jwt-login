@@ -1,4 +1,4 @@
-package com.lucamartinelli.app.login.ejb;
+package com.lucamartinelli.app.simplesite.login.ejb;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
@@ -12,11 +12,11 @@ import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.security.auth.login.LoginException;
 
-import com.lucamartinelli.app.login.jwt.SignerEJBInterface;
-import com.lucamartinelli.app.login.util.HashUtil;
-import com.lucamartinelli.app.login.util.RequestToken;
-import com.lucamartinelli.app.login.vo.CredentialsVO;
-import com.lucamartinelli.app.login.vo.UserVO;
+import com.lucamartinelli.app.simplesite.login.jwt.SignerEJBInterface;
+import com.lucamartinelli.app.simplesite.login.util.HashUtil;
+import com.lucamartinelli.app.simplesite.login.util.RequestToken;
+import com.lucamartinelli.app.simplesite.login.vo.CredentialsVO;
+import com.lucamartinelli.app.simplesite.login.vo.UserVO;
 import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jwt.JWTClaimsSet;
 

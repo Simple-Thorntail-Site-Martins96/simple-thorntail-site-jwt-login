@@ -1,9 +1,9 @@
-package com.lucamartinelli.app.login.ejb;
+package com.lucamartinelli.app.simplesite.login.ejb;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 
-import com.lucamartinelli.app.login.vo.CredentialsVO;
+import com.lucamartinelli.app.simplesite.login.vo.CredentialsVO;
 
 /**
  * Session Bean implementation class LoginProperties

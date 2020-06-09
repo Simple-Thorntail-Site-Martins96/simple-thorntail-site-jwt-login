@@ -1,4 +1,4 @@
-package com.lucamartinelli.app.login.vo;
+package com.lucamartinelli.app.simplesite.login.vo;
 
 public enum LoginModes {
 	

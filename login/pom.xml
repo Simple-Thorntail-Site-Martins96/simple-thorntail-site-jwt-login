@@ -5,7 +5,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.lucamartinelli.app</groupId>
+	<groupId>com.lucamartinelli.app.simplesite</groupId>
 	<artifactId>Login</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Login using Signed JWT</name>

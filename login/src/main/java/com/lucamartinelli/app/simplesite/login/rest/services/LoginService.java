@@ -1,4 +1,4 @@
-package com.lucamartinelli.app.login.rest.services;
+package com.lucamartinelli.app.simplesite.login.rest.services;
 
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
@@ -16,9 +16,9 @@ import javax.ws.rs.core.Response;
 
 import org.eclipse.microprofile.config.ConfigProvider;
 
-import com.lucamartinelli.app.login.ejb.LoginInMemoryEJB;
-import com.lucamartinelli.app.login.vo.CredentialsVO;
-import com.lucamartinelli.app.login.vo.LoginModes;
+import com.lucamartinelli.app.simplesite.login.ejb.LoginInMemoryEJB;
+import com.lucamartinelli.app.simplesite.login.vo.CredentialsVO;
+import com.lucamartinelli.app.simplesite.login.vo.LoginModes;
 
 @Path("/login")
 @RequestScoped

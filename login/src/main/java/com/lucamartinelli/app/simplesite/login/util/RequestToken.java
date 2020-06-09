@@ -1,9 +1,9 @@
-package com.lucamartinelli.app.login.util;
+package com.lucamartinelli.app.simplesite.login.util;
 
 import java.util.Arrays;
 import java.util.Date;
 
-import com.lucamartinelli.app.login.vo.UserVO;
+import com.lucamartinelli.app.simplesite.login.vo.UserVO;
 import com.nimbusds.jwt.JWTClaimsSet;
 
 import net.minidev.json.JSONArray;

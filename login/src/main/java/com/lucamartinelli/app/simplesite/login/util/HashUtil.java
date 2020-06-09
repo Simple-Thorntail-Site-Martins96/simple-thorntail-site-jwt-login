@@ -1,4 +1,4 @@
-package com.lucamartinelli.app.login.util;
+package com.lucamartinelli.app.simplesite.login.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

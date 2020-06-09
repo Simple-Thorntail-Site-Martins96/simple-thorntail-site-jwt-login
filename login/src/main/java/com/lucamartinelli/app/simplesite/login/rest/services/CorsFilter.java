@@ -1,4 +1,4 @@
-package com.lucamartinelli.app.login.rest.services;
+package com.lucamartinelli.app.simplesite.login.rest.services;
 
 import java.io.IOException;
 

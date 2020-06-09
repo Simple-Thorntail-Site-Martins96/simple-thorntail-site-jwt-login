@@ -1,4 +1,4 @@
-package com.lucamartinelli.app.login.rest.services;
+package com.lucamartinelli.app.simplesite.login.rest.services;
 
 import org.eclipse.microprofile.health.HealthCheck;
 import org.eclipse.microprofile.health.HealthCheckResponse;

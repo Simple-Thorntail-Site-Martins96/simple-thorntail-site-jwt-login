@@ -1,4 +1,4 @@
-package com.lucamartinelli.app.login.jwt;
+package com.lucamartinelli.app.simplesite.login.jwt;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
