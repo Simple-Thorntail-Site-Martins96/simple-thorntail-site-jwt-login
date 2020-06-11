@@ -4,9 +4,45 @@
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button:focus {
+    outline: 0;
+    outline-offset: -4px;
+}
+
+button span {
+	color: black; 
+	font-family : "Montserrat", sans-serif;
+	font-weight: semibold;
+	font-family: "Montserrat", sans-serif;
+}
+
+button:hover {
+	opacity: 0.9;
+	box-shadow: -1px -1px 2px #a1a1a1, 1px 1px 2px #000000;
+}
+
+button:active {
+	opacity: 1;
+	box-shadow: inset -1px -1px 4px #ffffff, inset 1px 1px
+		4px #000000;
+	color: #9a9a9a;
+}
+
+button {
+	width: 60px;
+	height: 25px;
+	position: relative;
+	background: #fafafa;
+	border-radius: 10px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+	outline: none;
 }

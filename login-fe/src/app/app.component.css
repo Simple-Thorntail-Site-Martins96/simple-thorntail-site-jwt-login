@@ -9,3 +9,11 @@
 	width: 90%;
 	word-wrap: break-word;
 }
+
+.home-btn {
+	max-width: 300px;
+	margin-top: 50px;
+	height: auto;
+	width: auto;
+	padding: 5px 0;
+}

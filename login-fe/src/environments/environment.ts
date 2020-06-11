@@ -7,6 +7,7 @@ export const environment = {
 };
 
 export const host = 'localhost:8080';
+export const homeUrl = "http://localhost:4201";
 
 /*
  * For easier debugging in development mode, you can import the following file

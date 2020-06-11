@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
 	declarations: [
@@ -18,7 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 		HttpClientModule,
 		FormsModule
 	],
-	providers: [],
+	providers: [ CookieService ],
 	bootstrap: [
 		AppComponent]
 })

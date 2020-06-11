@@ -4,18 +4,25 @@ import { Observable } from 'rxjs';
 
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root'
 })
 export class RestService {
 
-  constructor(private http: HttpClient) { }
+	constructor(private http: HttpClient) { }
 
-  sendPostGetRawText(url: string, body: any, headers: HttpHeaders): Observable<HttpResponse<string>> {
-    // call
-    return this.http.post(url, body, {
-      headers,
-      observe: 'response',
-      responseType: 'text'
-    });
-  }
+	sendPostGetRawText(url: string, body: any, headers: HttpHeaders): Observable<HttpResponse<string>> {
+		// call
+		return this.http.post(url, body, {
+			headers,
+			observe: 'response',
+			responseType: 'text'
+		});
+	}
+
+	sendPostWithString(url: string, body: string, headers: HttpHeaders): Observable<HttpResponse<any>> {
+		return this.http.post(url, body, {
+			headers,
+			observe: 'response'
+		})
+	}
 }

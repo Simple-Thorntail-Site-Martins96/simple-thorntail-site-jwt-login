@@ -17,6 +17,23 @@ h1 {
 	align-self: center;
 }
 
+.error-login {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.error-login span {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.login-btn {
+	max-width: 250px;
+	min-width: 100px;
+	width: 80%;
+	margin-top: 25px;
+}
+
 /* Input text user & pass */
 
 input {
