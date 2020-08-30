@@ -16,6 +16,7 @@ import javax.ws.rs.core.Response;
 
 import org.eclipse.microprofile.config.ConfigProvider;
 
+import com.lucamartinelli.app.simplesite.login.ejb.LoginDatabaseEJB;
 import com.lucamartinelli.app.simplesite.login.ejb.LoginInMemoryEJB;
 import com.lucamartinelli.app.simplesite.login.vo.CredentialsVO;
 import com.lucamartinelli.app.simplesite.login.vo.LoginModes;
@@ -26,6 +27,9 @@ public class LoginService {
 	
 	@EJB
 	private LoginInMemoryEJB inMemoryEJB;
+	
+	@EJB
+	private LoginDatabaseEJB dbEJB;
 	
 	private static final Logger log = 
 			LogManager.getLogManager().getLogger(LoginService.class.getCanonicalName());
@@ -63,7 +67,12 @@ public class LoginService {
 		case PROPERTIES:
 			return Response.serverError().entity("Not implemented").build();
 		case DATABASE:
-			return Response.serverError().entity("Not implemented").build();
+			try {
+				return Response.ok().entity(dbEJB.login(cred)).build();
+			} catch (LoginException e) {
+				log.severe("Login failed: " + e.getMessage());
+				return Response.status(403).entity(e.getMessage()).build();
+			}
 		
 		default:
 			return Response.serverError().entity("Not manageble scenario").build();
