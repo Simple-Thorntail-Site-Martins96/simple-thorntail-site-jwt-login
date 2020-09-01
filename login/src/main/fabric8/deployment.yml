@@ -1,0 +1,12 @@
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - env:
+        - name: THORNTAIL_PROJECT_STAGE
+          value: openshift
+        - name: JAVA_APP_DIR
+          value: /deployments
+        - name: JAVA_OPTIONS
+          value: -Ddatabase.services.login.endpoint=http://$(DATABASE_SERVICE_SERVICE_HOST):$(DATABASE_SERVICE_SERVICE_PORT)/database/login

@@ -18,3 +18,11 @@ thorntail:
     console-handlers:
       CONSOLE:
         level: FINE
+---
+project:
+  stage: openshift
+thorntail:
+  network:
+    socket-binding-groups:
+      standard-sockets:
+        port-offset: 0
