@@ -38,7 +38,8 @@ This mode can be use for a fast demo, inside the pre-built data there are these 
 The in-memory password are stored in the LoginInMemory EJB and already hashed with SHA256 algorithm.
 
 ### Properties
-Not implemented yet
+The code will load from file `cred/login.properties` the users. The key of the property is the username and value is the JSON that contains all user info, hash password included.<br>
+The flow will get the user data by username in input and check the password, if all is correct will generated the JWT with user data.
 
 ### Database
 This mode load from the [database service module](https://github.com/Martins96/simple-site-database-manager) the login credentials by username. The connection is a post method with a security header (API Key), a sort of password for the service authentication.<br>
