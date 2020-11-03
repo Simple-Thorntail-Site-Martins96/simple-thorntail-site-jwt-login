@@ -71,7 +71,7 @@ private final Logger log;
 				.post(Entity.entity(credentials, MediaType.APPLICATION_JSON), UserVO.class);
     	
 		if (user == null) {
-			log.warning("User credentials are not corrrect");
+			log.warning("User credentials are not correct");
 			throw new LoginException("Credentials not correct");
 		}
 		
