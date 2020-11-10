@@ -13,8 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-          	"baseHref" : "/login/",
-          	"deployUrl": "/login/",
+          	"baseHref" : "/",
+          	"deployUrl": "/",
             "outputPath": "dist/login-fe",
             "index": "src/index.html",
             "main": "src/main.ts",
