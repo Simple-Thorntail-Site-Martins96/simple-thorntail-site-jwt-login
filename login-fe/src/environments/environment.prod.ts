@@ -3,4 +3,4 @@ export const environment = {
 };
 
 export const host = 'login-simple-site.apps-crc.testing';
-export const homeUrl = "http://google.it";
+export const homeUrl = "http://home-fe-simple-site.apps-crc.testing";
